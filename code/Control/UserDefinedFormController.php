@@ -23,6 +23,11 @@ use SilverStripe\View\ArrayData;
 use SilverStripe\View\Requirements;
 use SilverStripe\View\SSViewer;
 
+if (!class_exists('PageController')) {
+    return;
+}
+
+
 /**
  * Controller for the {@link UserDefinedForm} page type.
  *

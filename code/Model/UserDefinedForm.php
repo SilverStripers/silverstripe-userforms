@@ -7,6 +7,10 @@ use Page;
 use SilverStripe\UserForms\UserForm;
 use SilverStripe\UserForms\Control\UserDefinedFormController;
 
+if (!class_exists('Page')) {
+    return;
+}
+
 /**
  * @package userforms
  */
